@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E803E321C2268DE9B00674 /* Pods_OtoCabTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD0BEBBB2208A9AD8D6FB16 /* Pods_OtoCabTask.framework */; };
+		8B4B60ED2464AC0800ECB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B60EC2464AC0800ECB039 /* AppDelegate.swift */; };
+		8B4B60EF2464AC0800ECB039 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B60EE2464AC0800ECB039 /* SceneDelegate.swift */; };
+		8B4B60F12464AC0800ECB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B60F02464AC0800ECB039 /* ViewController.swift */; };
+		8B4B60F42464AC0800ECB039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B60F22464AC0800ECB039 /* Main.storyboard */; };
+		8B4B60F62464AC1000ECB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B60F52464AC1000ECB039 /* Assets.xcassets */; };
+		8B4B60F92464AC1000ECB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B60F72464AC1000ECB039 /* LaunchScreen.storyboard */; };
+		8B843C652465D1CA00693FC1 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B843C642465D1CA00693FC1 /* PinModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CD0BEBBB2208A9AD8D6FB16 /* Pods_OtoCabTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoCabTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A088E46558999D76ABD5B4 /* Pods-OtoCabTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoCabTask.debug.xcconfig"; path = "Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask.debug.xcconfig"; sourceTree = "<group>"; };
+		8B4B60E92464AC0800ECB039 /* OtoCabTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoCabTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4B60EC2464AC0800ECB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B4B60EE2464AC0800ECB039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B4B60F02464AC0800ECB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B4B60F32464AC0800ECB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B4B60F52464AC1000ECB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B4B60F82464AC1000ECB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B4B60FA2464AC1000ECB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B843C642465D1CA00693FC1 /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
+		A638654C1D02A18596838B91 /* Pods-OtoCabTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoCabTask.release.xcconfig"; path = "Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B4B60E62464AC0800ECB039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E803E321C2268DE9B00674 /* Pods_OtoCabTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB959448D7E8B2F3BCAE244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26A088E46558999D76ABD5B4 /* Pods-OtoCabTask.debug.xcconfig */,
+				A638654C1D02A18596838B91 /* Pods-OtoCabTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B4B60E02464AC0800ECB039 = {
+			isa = PBXGroup;
+			children = (
+				8B4B60EB2464AC0800ECB039 /* OtoCabTask */,
+				8B4B60EA2464AC0800ECB039 /* Products */,
+				5DB959448D7E8B2F3BCAE244 /* Pods */,
+				A2F1D3355D802F68A7722AA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B4B60EA2464AC0800ECB039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B60E92464AC0800ECB039 /* OtoCabTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B4B60EB2464AC0800ECB039 /* OtoCabTask */ = {
+			isa = PBXGroup;
+			children = (
+				8B843C632465D1A700693FC1 /* Model */,
+				8B843C662465D1FA00693FC1 /* View */,
+				8B843C672465D22E00693FC1 /* Controller */,
+				8B4B60EC2464AC0800ECB039 /* AppDelegate.swift */,
+				8B4B60EE2464AC0800ECB039 /* SceneDelegate.swift */,
+				8B4B60F52464AC1000ECB039 /* Assets.xcassets */,
+				8B4B60F72464AC1000ECB039 /* LaunchScreen.storyboard */,
+				8B4B60FA2464AC1000ECB039 /* Info.plist */,
+			);
+			path = OtoCabTask;
+			sourceTree = "<group>";
+		};
+		8B843C632465D1A700693FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B843C642465D1CA00693FC1 /* PinModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B843C662465D1FA00693FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B60F22464AC0800ECB039 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B843C672465D22E00693FC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B60F02464AC0800ECB039 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2F1D3355D802F68A7722AA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0BEBBB2208A9AD8D6FB16 /* Pods_OtoCabTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B4B60E82464AC0800ECB039 /* OtoCabTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4B60FD2464AC1000ECB039 /* Build configuration list for PBXNativeTarget "OtoCabTask" */;
+			buildPhases = (
+				C71DC5088465A5B8713B7149 /* [CP] Check Pods Manifest.lock */,
+				8B4B60E52464AC0800ECB039 /* Sources */,
+				8B4B60E62464AC0800ECB039 /* Frameworks */,
+				8B4B60E72464AC0800ECB039 /* Resources */,
+				EA288DC5CB9593B063B224A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtoCabTask;
+			productName = OtoCabTask;
+			productReference = 8B4B60E92464AC0800ECB039 /* OtoCabTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B4B60E12464AC0800ECB039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Gado;
+				TargetAttributes = {
+					8B4B60E82464AC0800ECB039 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B4B60E42464AC0800ECB039 /* Build configuration list for PBXProject "OtoCabTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B4B60E02464AC0800ECB039;
+			productRefGroup = 8B4B60EA2464AC0800ECB039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B4B60E82464AC0800ECB039 /* OtoCabTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B4B60E72464AC0800ECB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4B60F92464AC1000ECB039 /* LaunchScreen.storyboard in Resources */,
+				8B4B60F62464AC1000ECB039 /* Assets.xcassets in Resources */,
+				8B4B60F42464AC0800ECB039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C71DC5088465A5B8713B7149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OtoCabTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA288DC5CB9593B063B224A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B4B60E52464AC0800ECB039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4B60F12464AC0800ECB039 /* ViewController.swift in Sources */,
+				8B843C652465D1CA00693FC1 /* PinModel.swift in Sources */,
+				8B4B60ED2464AC0800ECB039 /* AppDelegate.swift in Sources */,
+				8B4B60EF2464AC0800ECB039 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B4B60F22464AC0800ECB039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4B60F32464AC0800ECB039 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B4B60F72464AC1000ECB039 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4B60F82464AC1000ECB039 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B4B60FB2464AC1000ECB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B4B60FC2464AC1000ECB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B4B60FE2464AC1000ECB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A088E46558999D76ABD5B4 /* Pods-OtoCabTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96CZXG77ZE;
+				INFOPLIST_FILE = OtoCabTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gadolizm.OtoCabTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8B4B60FF2464AC1000ECB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A638654C1D02A18596838B91 /* Pods-OtoCabTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96CZXG77ZE;
+				INFOPLIST_FILE = OtoCabTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gadolizm.OtoCabTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B4B60E42464AC0800ECB039 /* Build configuration list for PBXProject "OtoCabTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4B60FB2464AC1000ECB039 /* Debug */,
+				8B4B60FC2464AC1000ECB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4B60FD2464AC1000ECB039 /* Build configuration list for PBXNativeTarget "OtoCabTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4B60FE2464AC1000ECB039 /* Debug */,
+				8B4B60FF2464AC1000ECB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B4B60E12464AC0800ECB039 /* Project object */;
+}
