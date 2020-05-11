@@ -130,6 +130,7 @@
 				8B4B60E62464AC0800ECB039 /* Frameworks */,
 				8B4B60E72464AC0800ECB039 /* Resources */,
 				EA288DC5CB9593B063B224A4 /* [CP] Copy Pods Resources */,
+				BFE25DAD1344E2AC8F826B14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +188,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BFE25DAD1344E2AC8F826B14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OtoCabTask/Pods-OtoCabTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C71DC5088465A5B8713B7149 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

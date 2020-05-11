@@ -8,6 +8,8 @@
 
 import UIKit
 import GoogleMaps
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -38,10 +40,12 @@ class ViewController: UIViewController {
     func configureView() {
         
         // User Location
-        locationManager.delegate = self
-        mapView.delegate = self
+        locationManager.delegate = self as? CLLocationManagerDelegate
+        mapView.delegate = self as? GMSMapViewDelegate
         locationManager.requestWhenInUseAuthorization()
         mapView.settings.myLocationButton = true
+        
+        mapView.isMyLocationEnabled = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Make Route", style: .plain, target: self, action: #selector(makeRoute))
         navigationItem.rightBarButtonItem?.isEnabled = false
@@ -82,7 +86,8 @@ class ViewController: UIViewController {
         
         setMapCamera(pin: firstDestinations)
         setMapCamera(pin: secondDestinations)
-        draw()
+        // draw()
+        drawPath()
     }
     
     private func setMapCamera(pin :Pin) {
@@ -95,17 +100,50 @@ class ViewController: UIViewController {
         marker.title = pin.name
         marker.map = mapView
     }
+
     
-    func draw() {
-        let path = GMSMutablePath()
-        path.addLatitude(destinations[0]!.location.latitude, longitude:destinations[0]!.location.longitude)
-        path.addLatitude(destinations[1]!.location.latitude, longitude:destinations[1]!.location.longitude)
+    func drawPath()
+    {
         
-        let polyline = GMSPolyline(path: path)
-        polyline.strokeColor = .red
-        polyline.strokeWidth = 3.0
-        polyline.map = self.mapView
+        let origin = "\(destinations[0]!.location.latitude),\(destinations[0]!.location.longitude)"
+        let destination = "\(destinations[1]!.location.latitude),\(destinations[1]!.location.longitude)"
         
+        
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyA7x8C5JfEuV4rla47a730ZnNCc5MRKOiE"
+        
+        
+        
+        AF.request(url).responseJSON { response in
+            
+            guard let data = response.data else
+            {
+                return
+            }
+            print(response.request ?? "")  // original URL request
+            print(response.response ?? "") // HTTP URL response
+            print(data)     // server data
+            print(response.result)   // result of response serialization
+            
+            do {
+                let jsonData = try JSON(data: data)
+                let routes = jsonData["routes"].arrayValue
+                
+                for route in routes
+                {
+                    let routeOverviewPolyline = route["overview_polyline"].dictionary
+                    let points = routeOverviewPolyline?["points"]?.stringValue
+                    let path = GMSPath.init(fromEncodedPath: points!)
+                    let polyline = GMSPolyline.init(path: path)
+                    polyline.strokeColor = .red
+                    polyline.strokeWidth = 5.0
+                    polyline.map = self.mapView
+                }
+            }
+            catch {
+                print("ERROR: not working")
+            }
+            
+        }
     }
 }
 
@@ -155,7 +193,7 @@ extension ViewController: GMSMapViewDelegate {
         }
         
         let marker = GMSMarker(position: coordinate)
-        destinations.append(Pin(name: "", location: CLLocationCoordinate2DMake(coordinate.latitude,coordinate.longitude), zoom: 20))
+        destinations.append(Pin(name: "", location: CLLocationCoordinate2DMake(coordinate.latitude,coordinate.longitude), zoom: 10))
         marker.map = mapView
     }
     

@@ -8,6 +8,8 @@ target 'OtoCabTask' do
   # Pods for OtoCabTask
 
   pod 'GoogleMaps'
-  pod 'GooglePlaces' 
+  pod 'GooglePlaces'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end
