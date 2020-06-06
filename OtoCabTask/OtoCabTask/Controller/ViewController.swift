@@ -100,16 +100,47 @@ class ViewController: UIViewController {
         marker.title = pin.name
         marker.map = mapView
     }
-
     
+    //    func draw() {
+    //        let path = GMSMutablePath()
+    //        path.addLatitude(destinations[0]!.location.latitude, longitude:destinations[0]!.location.longitude)
+    //        path.addLatitude(destinations[1]!.location.latitude, longitude:destinations[1]!.location.longitude)
+    //
+    //        let polyline = GMSPolyline(path: path)
+    //        polyline.strokeColor = .red
+    //        polyline.strokeWidth = 3.0
+    //        polyline.map = self.mapView
+    //
+    //    }
+    
+    
+    
+    // MARK:- TAKE CARE
+    
+    // 1- Note: The Google Places API Web Service does not work with an Android or iOS restricted API key.
+    // 2- ERROR : This IP, site or mobile application is not authorized to use this API key
+
+        /*
+     Choose key
+     API Restriction tab
+     Choose API key
+     Save
+     Choose Application Restriction -> None
+     Save
+     
+     3- You must enable Billing on the Google Cloud Project
+     */
+     
     func drawPath()
     {
+        //           let origin = "\(43.1561681),\(-75.8449946)"
+        //           let destination = "\(38.8950712),\(-77.0362758)"
         
         let origin = "\(destinations[0]!.location.latitude),\(destinations[0]!.location.longitude)"
         let destination = "\(destinations[1]!.location.latitude),\(destinations[1]!.location.longitude)"
         
         
-        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyA7x8C5JfEuV4rla47a730ZnNCc5MRKOiE"
+        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key="
         
         
         
